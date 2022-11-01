@@ -1,22 +1,65 @@
-|Element | Brief Description|
-|---------------| --------------
-|Code name | Video Game Criminals | 
-|Project title| Give your project a concise, interesting title that summarizes the entirety of your project. (Your title can change on subsequent deliverables.) |
-|Authors | Truong Le (truongle@uw.edu), Jerry Tang (Jertang@uw.edu), Jesse Kim() |
-|Affiliation |  INFO-201: Technical Foundations of Informatics - The Information School - University of Washington |
-|Date | October 30, 2022|
-|Abstract | Our main question is if there is a correlation between video games and crime rates. This question is important because for years, people have been saying that if you play video games, you are likely to be a criminal. To address the question, we will be looking at data from each state, their most popular games and the amount of crimes committed. We are concerned with different factors that will contribute to the amount of crimes. To address this, we will look at the type of crimes that were committed, while also looking at the type of games that are being played in each states.|
-|Keywords | Video games and crimes correlation? |
-|Introduction | For years, people have associated with playing video games to violence, believing that people who play games are more likely to become criminals. Along with Post COVID, what people are saying has been an increase in crime rates, we would like to use this opportunity to see whther there is an correlation between gamers and crimes. (About 150 words.) |
-|Problem Domain | Use short sub-sections to describe your topic and the setting (that is, the sociotechnical situation), including project framing, human values, direct and indirect stakeholders, possible harms and benefits. See the Design Brief, section B.3. **Note**: You *must* include three citations to related work (URLs to similar work, high quality articles from the popular press, reseach papers, etc. ). You may find it helpful to include a figure.  (About 400 words.) |
-|Research Questions | **(1)** What is the most popular game in the state? This is an impostant question to ask because when people associate to violence, they talk about shooting games. We can see if there is an association between the type of games played and crime. **(2)** How many crimes are in each state? We need to see how many crimes are in each state to compare whether video games do increase crime rates. **(3)** What type of crimes are most commmitted? This question should be asked because we need to see if the type of crimes that are committed is associated to the type of games that people play. |
-|The Dataset | **(1)** Describe how your dataset is related to your problem domain and, specifically, to your research qeustions. That is, how will your dataset enable you to answer your research questions? **(2)** Include a table that presents the name of each data file, the number of observations (rows), and the number of variables (columns). **(3)** Include a full citation to each data file, including URL. **(4)** Finally, describe the provenance of your dataset, addressing such key questions as: (a) Who collected the data? When? For what purpose? (b) How was the data collection effort funded? Who is likely to benefit from the data or make money? (c) How was the data validated and held secure?  Is it credible and trustworthy? (d) How did you obtain the data? Do you credit the source of the data? (About 400 words.) |
-|Expected Implications | The expected implication for policymakers is that with the report that we made, policymakers can make a policy according to help reduce crime rates. For the media, we are hoping that this research is able to change people's perspective on video games and crime rates, whether there is an association, more attention will be shown about the policy to make a difference. if there isn't, we should change our perspective on video games. |
-|Limitations | There are many factors and types of crimes. Post COVID, there has been what is assumed as an increase in crime rates. However, factors that can play a role in this are police defunding and homeless rates. Because of this, it will be hard to tell if crime rates is truly associated to video games.|
+# Is Video Games the Cause of Crimes?
+## Code Name: Video Game Criminals
+## Authors: Truong Le (truongle@uw.edu), Jerry Tang (Jertang@uw.edu), Jesse Kim(jkim1224@uw.edu)
+## Affiliation: INFO-201: Technical Foundations of Informatics - The Information School - University of Washington
+## Autumn 2022
+
+### Abstract:
+Our main question is whether there is a correlation between video games and crime rates. This question is important because for years, people have been saying that if you play video games, you are likely to be a criminal. To address the question, we will be looking at data from each year for the United States, the most popular games and the amount of crimes committed. We are concerned with different factors that will contribute to the amount of crimes. To address this, we will look at the type of crimes that were committed, while also looking at the genre of games that are being played most each year to compare whether there is a correlation.
+
+### Keywords:
+- Video games
+- Crime
+- Correlation
+- Violence
+- Confounding
+
+### Introduction:
+For years, people have associated playing video games to violence, believing that people who play video games are more likely to become criminals. This has piqued the interest of the  research topic of “is video games a cause of crime rates?” To answer this question, we will have to look at two types of data. The first being the number of crimes that occurred in each year  in the United States. The second is the most popular game each year. With this data, we will be able to see if the genre of the game will have a factor in the number of crimes.
+
+### Problem Domain
+**Background:**
+As a group collectively, we like to play games whether that be first-person shooters or party games on the Nintendo Switch. And recently there have been a lot of shootings and criminal activity that has been happening near the UW campus. We have all also heard that violent video games may cause an increase in violent behaviors in a person. So we were wondering if the violence from video games had any impact on whether that person affected by video games would commit a crime. 
+
+**Direct and Indirect Stakeholders:**
+The stakeholders in our situation are adolescents and the general public. In this case, adolescents are a direct stakeholder because the majority of the player base for most video games is adolescents. So they are the generation that is most susceptible to the violence that is in video games. Which can rub off into their personalities and potentially make them more violent. An indirect stakeholder in our project is the general public. The general public is a stakeholder because they will be the ones that are affected by the crimes that people make. People with very violent personalities and tendencies are more likely to commit crimes and hurt others.
+
+**Human Values:**
+With our research project we would like to create a safer environment in our community and see if there is a potential link between video games and crime rates. We would like to help our community by creating a visual diagram and report our findings about video games and their impact on violence and crime rates in our community. 
+
+**Potential Benefits and Harms:**
+Some potential benefits from our project would be to inform other people about video games and if there is a correlation between them with increased violence in a person. This way people are more informed about video games and increased violence in adolescents. A potential harm is that if we find a strong correlation between video games with increased violence and crimes, we might be stereotyping all people that play games as people that are violent and criminals. We may create a stigma against video games and gamers, which is something we would like to refrain from doing. 
+
+https://journals.sagepub.com/doi/full/10.1080/10398560701463343?casa_token=kwQY1uRJR6YAAAAA%3AFijI7oapcOltWpe5J_rlu3okkXu4R0MPfdgLz0QtOtGxcRFNkQV478R4cNatYCMAxo8MfE_dLOy4HQ 
+
+https://www.sciencedirect.com/science/article/abs/pii/S135917891000073X?casa_token=mUuCCi9QqkIAAAAA:MANi-SH3sfyRNMTh215Sbn0QCUl0QDCMcco3BQISvzEtCSTAW8IPQuPxRpxcXsVWEVm8Uo_vnw
+
+https://academic.oup.com/joc/article-abstract/65/1/193/4082362
+
+### Research Questions
+- _(1)_ What is the most popular game each year in the United States? 
+This is an important question to ask because not every game is a violence game. If we are able to see what the most popular game is each year, we are able to look at the genre of the game to see whether there is a correlation between the type of game that is being played and crimes.
+- _(2)_ How many crimes are committed in the United States? 
+We need to look at the amount of crimes in the United States because that is where the most attention is focused on on news outlets and researches. If there is an association between crimes and video games, we will see an increase in crime when 
+- _(3)_ What type of crimes are most committed? 
+This question should be asked because we need to see if the type of crimes that are committed is associated with the type of games that are being played the most. With this type of information, we are able to see whether video games are igniting the fuel to commit crimes, or that the type of crime that is being committed is taught by the video games they played. 
+
+### The Dataset
+The dataset that is being presented is related to our research questions because it answers the questions that are being asked. It includes the amount of crimes reported in the United States each year, what types of crimes were committed, and the most popular games each year. For our research, the data is collected by two organizations. The crime datas are collected by the “Federal Bureau of Investigation.” The video games data are collected by the organization NPD, a market research organization. The crime data is funded by taxes. However, NPD is funded by industries. The people who benefit the most through NPD are the industries who funded NPD, while crime data benefits the government officials. The datas are held secure and validated because higher up rely on the data to be accurate to use. For NPD, it is these big industries that rely on the data, for crime data, it is the government officials. We believe that the data are credible because the companies are being paid to give accurate data for the industries, helping the industry see what they are doing is working or not. We obtained the data through their respective websites. 
+
+### Expected Implications
+- From this research, we are hoping that policymakers will be able to see whether there is a correlation between video games and crimes, or not. If there is a correlation as the public believes, policymakers should change their policies on how to regulate video games.
+- People who play video games have been getting a really bad reputation in the media. We hope that this study will change the media’s perspective if there isn’t a correlation between video games and crimes. However, if there is one, we hope that the media is able to bring awareness with data, instead of gossip. 
+
+### Limitations
+- The limitation of this research is that there are many factors to why people commit crime. This will make it hard for us to tell if there truly is an association between video games and crimes.To address this issue, we will look at the type of crimes that were committed that year to see whether the types of crimes that are committed are similar to the genre of the video games.
+- Due to the nature of our research correlation does not mean causation. The psychology of mental health issues and criminology is complex with many confounding variables that is hard to isolate with our skill cap at this time. As a result our project would rely on research studies to prove/disprove our statistical data.
+
+
 
 | Data File Name | Number of Variables | Number of Observations | URL | 
 | :---           |        :----:       |        :----:          | ---:|
 | Crimes Against Persons Offenses|       5     |     10  | https://crime-data-explorer.fr.gov/pages/home    |
 | Crimes Against Society Offenses |        6      |       10       | https://crime-data-explorer.fr.gov/pages/home    |
 | Crimes Against Property Offneses |          12   |      10      |  https://crime-data-explorer.fr.gov/pages/home   |
-| Top video games per year | 1 | 10 | https://today.yougov.com/ratings/technology/popularity/video-games/all |
+| Top video games per year | 1 | 10 | businessinsider.com/best-selling-video-game-every-year-2018-11 |
