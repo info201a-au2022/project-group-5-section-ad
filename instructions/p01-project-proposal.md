@@ -62,4 +62,4 @@ The dataset that is being presented is related to our research questions because
 | Crimes Against Persons Offenses|       5     |     10  | https://crime-data-explorer.fr.gov/pages/home    |
 | Crimes Against Society Offenses |        6      |       10       | https://crime-data-explorer.fr.gov/pages/home    |
 | Crimes Against Property Offneses |          12   |      10      |  https://crime-data-explorer.fr.gov/pages/home   |
-| Top video games per year | 1 | 10 | businessinsider.com/best-selling-video-game-every-year-2018-11 |
+| Top video games per year | 1 | 24 | https://businessinsider.com/best-selling-video-game-every-year-2018-11 |
