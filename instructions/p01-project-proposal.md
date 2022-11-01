@@ -30,11 +30,11 @@ With our research project we would like to create a safer environment in our com
 **Potential Benefits and Harms:**
 Some potential benefits from our project would be to inform other people about video games and if there is a correlation between them with increased violence in a person. This way people are more informed about video games and increased violence in adolescents. A potential harm is that if we find a strong correlation between video games with increased violence and crimes, we might be stereotyping all people that play games as people that are violent and criminals. We may create a stigma against video games and gamers, which is something we would like to refrain from doing. 
 
-https://journals.sagepub.com/doi/full/10.1080/10398560701463343?casa_token=kwQY1uRJR6YAAAAA%3AFijI7oapcOltWpe5J_rlu3okkXu4R0MPfdgLz0QtOtGxcRFNkQV478R4cNatYCMAxo8MfE_dLOy4HQ 
+Porter G, Starcevic V. Are Violent Video Games Harmful? Australasian Psychiatry. 2007;15(5):422-426. doi:10.1080/10398560701463343
 
-https://www.sciencedirect.com/science/article/abs/pii/S135917891000073X?casa_token=mUuCCi9QqkIAAAAA:MANi-SH3sfyRNMTh215Sbn0QCUl0QDCMcco3BQISvzEtCSTAW8IPQuPxRpxcXsVWEVm8Uo_vnw
+Paul J.C. Adachi, Teena Willoughby, The effect of violent video games on aggression: Is it more than just the violence? Aggression and Violent Behavior, Volume 16, Issue 1, 2011, Pages 55-62, ISSN 1359-1789, https://doi.org/10.1016/j.avb.2010.12.002. (https://www.sciencedirect.com/science/article/pii/S135917891000073X)
 
-https://academic.oup.com/joc/article-abstract/65/1/193/4082362
+Ferguson, Christopher J., Does Movie or Video Game Violence Predict Societal Violence?, Journal of Communication, J Commun, 2015, Volume 65, Issue 1, SN 0021-9916, 11/1/2022, https://doi.org/10.1111/jcom.12142
 
 ### Research Questions
 - _(1)_ What is the most popular game each year in the United States? 
@@ -55,16 +55,18 @@ The dataset that is being presented is related to our research questions because
 - The limitation of this research is that there are many factors to why people commit crime. This will make it hard for us to tell if there truly is an association between video games and crimes.To address this issue, we will look at the type of crimes that were committed that year to see whether the types of crimes that are committed are similar to the genre of the video games.
 - Due to the nature of our research correlation does not mean causation. The psychology of mental health issues and criminology is complex with many confounding variables that is hard to isolate with our skill cap at this time. As a result our project would rely on research studies to prove/disprove our statistical data.
 
+|Element | Brief Description|
+|---------------| --------------
 |_Findings_ | _Not for the project proposal; for final report only. Give answers to each of your research questions. (About 400 words.)_ |
 |_Discussion_ | _Not for the project proposal; for final report only. Discuss importance and/or implications of your findings  (About 400 words.)_ |
 |_Conclusion_ | _Not for the project proposal; for final report only. Give the reader a summary point, the key point that you will like your audience to leave with. (About 400 words.)_ |
 |Acknowledgements | Is there anyone you would like to thank? A librarian who helped you with your research? A Teaching Assistant? A friend who helped you find your data? Say thank you in this section.|
 |References | Include your three or more research citations here. Also, include citations to your data files. Please use a standard citation style of your choice.  See [Citing Sources](https://guides.lib.uw.edu/research/citations) at the UW Library. |
-|Appendix A: Questions| Do you have questions for your TA or instructor?  Include them here.|
+|Appendix A: Questions| How do we turn our data into a csv file? We are able to get excel files. |
 
 | Data File Name | Number of Variables | Number of Observations | Citations | 
 | :---           |        :----:       |        :----:          | ---:|
-| Crimes Against Persons Offenses|       5     |     10  | https://crime-data-explorer.fr.gov/pages/home    |
-| Crimes Against Society Offenses |        6      |       10       | https://crime-data-explorer.fr.gov/pages/home    |
-| Crimes Against Property Offneses |          12   |      10      |  https://crime-data-explorer.fr.gov/pages/home   |
+| Crimes Against Persons Offenses|       5     |     10  | Federal Bureau of Investigation. Crimes Against Persons Offenses. Retrieved October 30, 2022, from https://crime-data-explorer.fr.gov/pages/home    |
+| Crimes Against Society Offenses |    6   |   10 | Federal Bureau of Investigation. Crimes Against Persons Offenses. Retrieved October 30, 2022, from https://crime-data-explorer.fr.gov/pages/home    |
+| Crimes Against Property Offneses |  12 | 10 |  Federal Bureau of Investigation. Crimes Against Persons Offenses. Retrieved October 30, 2022, from https://crime-data-explorer.fr.gov/pages/home   |
 | Top video games per year | 1 | 24 | https://businessinsider.com/best-selling-video-game-every-year-2018-11 |
