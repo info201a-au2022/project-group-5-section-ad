@@ -55,9 +55,14 @@ The dataset that is being presented is related to our research questions because
 - The limitation of this research is that there are many factors to why people commit crime. This will make it hard for us to tell if there truly is an association between video games and crimes.To address this issue, we will look at the type of crimes that were committed that year to see whether the types of crimes that are committed are similar to the genre of the video games.
 - Due to the nature of our research correlation does not mean causation. The psychology of mental health issues and criminology is complex with many confounding variables that is hard to isolate with our skill cap at this time. As a result our project would rely on research studies to prove/disprove our statistical data.
 
+|_Findings_ | _Not for the project proposal; for final report only. Give answers to each of your research questions. (About 400 words.)_ |
+|_Discussion_ | _Not for the project proposal; for final report only. Discuss importance and/or implications of your findings  (About 400 words.)_ |
+|_Conclusion_ | _Not for the project proposal; for final report only. Give the reader a summary point, the key point that you will like your audience to leave with. (About 400 words.)_ |
+|Acknowledgements | Is there anyone you would like to thank? A librarian who helped you with your research? A Teaching Assistant? A friend who helped you find your data? Say thank you in this section.|
+|References | Include your three or more research citations here. Also, include citations to your data files. Please use a standard citation style of your choice.  See [Citing Sources](https://guides.lib.uw.edu/research/citations) at the UW Library. |
+|Appendix A: Questions| Do you have questions for your TA or instructor?  Include them here.|
 
-
-| Data File Name | Number of Variables | Number of Observations | URL | 
+| Data File Name | Number of Variables | Number of Observations | Citations | 
 | :---           |        :----:       |        :----:          | ---:|
 | Crimes Against Persons Offenses|       5     |     10  | https://crime-data-explorer.fr.gov/pages/home    |
 | Crimes Against Society Offenses |        6      |       10       | https://crime-data-explorer.fr.gov/pages/home    |
