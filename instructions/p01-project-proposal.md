@@ -30,11 +30,11 @@ With our research project we would like to create a safer environment in our com
 **Potential Benefits and Harms:**
 Some potential benefits from our project would be to inform other people about video games and if there is a correlation between them with increased violence in a person. This way people are more informed about video games and increased violence in adolescents. A potential harm is that if we find a strong correlation between video games with increased violence and crimes, we might be stereotyping all people that play games as people that are violent and criminals. We may create a stigma against video games and gamers, which is something we would like to refrain from doing. 
 
-Porter G, Starcevic V. Are Violent Video Games Harmful? Australasian Psychiatry. 2007;15(5):422-426. doi:10.1080/10398560701463343
+Ferguson, Christopher J., Does Movie or Video Game Violence Predict Societal Violence?, Journal of Communication, J Commun, 2015, Volume 65, Issue 1, SN 0021-9916, 11/1/2022, https://doi.org/10.1111/jcom.12142
 
 Paul J.C. Adachi, Teena Willoughby, The effect of violent video games on aggression: Is it more than just the violence? Aggression and Violent Behavior, Volume 16, Issue 1, 2011, Pages 55-62, ISSN 1359-1789, https://doi.org/10.1016/j.avb.2010.12.002. (https://www.sciencedirect.com/science/article/pii/S135917891000073X)
 
-Ferguson, Christopher J., Does Movie or Video Game Violence Predict Societal Violence?, Journal of Communication, J Commun, 2015, Volume 65, Issue 1, SN 0021-9916, 11/1/2022, https://doi.org/10.1111/jcom.12142
+Porter G, Starcevic V. Are Violent Video Games Harmful? Australasian Psychiatry. 2007;15(5):422-426. doi:10.1080/10398560701463343
 
 ### Research Questions
 - _(1)_ What is the most popular game each year in the United States? 
@@ -66,7 +66,7 @@ The dataset that is being presented is related to our research questions because
 
 | Data File Name | Number of Variables | Number of Observations | Citations | 
 | :---           |        :----:       |        :----:          | ---:|
-| Crimes Against Persons Offenses|       5     |     10  | Federal Bureau of Investigation. Crimes Against Persons Offenses. Retrieved October 30, 2022, from https://crime-data-explorer.fr.gov/pages/home    |
-| Crimes Against Society Offenses |    6   |   10 | Federal Bureau of Investigation. Crimes Against Persons Offenses. Retrieved October 30, 2022, from https://crime-data-explorer.fr.gov/pages/home    |
-| Crimes Against Property Offneses |  12 | 10 |  Federal Bureau of Investigation. Crimes Against Persons Offenses. Retrieved October 30, 2022, from https://crime-data-explorer.fr.gov/pages/home   |
-| Top video games per year | 1 | 24 | https://businessinsider.com/best-selling-video-game-every-year-2018-11 |
+| Crimes Against Persons Offenses|       5     |     10  | Federal Bureau of Investigation. "Crimes Against Persons Offenses." Retrieved October 30, 2022. From: https://crime-data-explorer.fr.gov/pages/home    |
+| Crimes Against Society Offenses |    6   |   10 | Federal Bureau of Investigation. "Crimes Against Society Offenses." Retrieved October 30, 2022. From: https://crime-data-explorer.fr.gov/pages/home    |
+| Crimes Against Property Offneses |  12 | 10 |  Federal Bureau of Investigation. "Crimes Against Property Offenses." Retrieved October 30, 2022. From: https://crime-data-explorer.fr.gov/pages/home   |
+| NPD: The 20 best-selling games of 2019 in the U.S. | 1 | 20 | Grubb, Jeff. "NPD: The 20 best-selling games of 2019 in the U.S." Retrieved October 30, 2022. From: https://venturebeat.com/games/20-best-selling-games-of-2019 |
