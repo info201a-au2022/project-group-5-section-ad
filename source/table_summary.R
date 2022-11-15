@@ -1,1 +1,1 @@
-
+crimes_against_person <- read.csv(file = "~/Documents/info201/project-group-5-section-ad/data/Crimes_Against_Persons_by_State_2021.csv")
