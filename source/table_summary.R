@@ -12,7 +12,7 @@ games_data <- read.csv(file = "~/Documents/info201/Project/project-group-5-secti
 # Creating table
 crimes_table <- left_join(crimes_against_person, crimes_against_property, by = "State")
 crimes_table <- left_join(crimes_table, crimes_against_society, by = "State")
-crimes_table <- mutate(crimes_table, "Total Offenses" = Total.Offenses.x + Total.Offenses.y + Total.Offenses)
+crimes_table <- mutate(crimes_table, "Total_Offenses" = Total.Offenses.x + Total.Offenses.y + Total.Offenses)
 crimes_table <- select(crimes_table, -Total.Offenses.x)
 crimes_table <- select(crimes_table, -Total.Offenses.y)
 crimes_table <- select(crimes_table, -Total.Offenses)
