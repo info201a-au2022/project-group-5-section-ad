@@ -8,5 +8,4 @@ library(ggplot2)
 # Plots dots, color coded for each states
 scatter_offenses <- ggplot(crimes_table, aes(x = State, y = `Total Offenses`, col = State)) +
   labs(title = "States vs Total Offenses") + geom_point()
-scatter_offenses
 
