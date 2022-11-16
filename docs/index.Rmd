@@ -6,7 +6,8 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-
+source("../source/summary_info.R")
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Dynamic Paragraph
@@ -14,17 +15,24 @@ output: html_document
 
 ## Summary Table
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
-
+library("dplyr")
+library("stringr")
+source("../source/table_summary.R")
+crimes_table
 ```
 
 ### Chart 1: Bar Plot (States vs Total Offenses)
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
-
+library("ggplot2")
+source("../source/first_chart.R")
+plot
 ```
 
 ### Chart 2: Scatter Plot (States vs Total Offenses)
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
-
+library("ggplot2")
+source("../source/second_chart.R")
+scatter_offenses
 ```
 
 ### Chart 3: idk
