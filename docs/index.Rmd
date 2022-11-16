@@ -6,38 +6,27 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-source("../source/summary_info.R")
-knitr::opts_chunk$set(echo = TRUE)
+
 ```
 
 # Dynamic Paragraph
 
 
-## Table
-```{r echo=FALSE}
-source("../source/table_summary.R")
-table <- load("table_summary.R")
-table
+## Summary Table
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
 ```
 
 ### Chart 1: Bar Plot (States vs Total Offenses)
-```{r echo=FALSE}
-source("../source/first_chart.R")
-chartOne <- load("first_chart.R")
-chartOne
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
 ```
 
 ### Chart 2: Scatter Plot (States vs Total Offenses)
-```{r echo=FALSE}
-source("../source/second_chart.R")
-chartTwo <- load("second_chart.R")
-chartTwo
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
 ```
 
 ### Chart 3: idk
 ```{r echo=FALSE}
-source("../source/third_chart.R")
-chartThree <- load("third_chart.R")
-chartThree
-
 ```
