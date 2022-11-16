@@ -8,10 +8,12 @@ output: html_document
 ```{r setup, include=FALSE}
 source("../source/summary_info.R")
 knitr::opts_chunk$set(echo = TRUE)
+summary_info
 ```
 
 # Dynamic Paragraph
 
+In 2021, there were `r summary_info$total_offenses_us` offenses that occurred throughout the United States. We, as a group, have known that there were studies done to determine if there was a correlation to video game violence to crime. Our project is an attempt at a comparative analysis between video games and crime. We aim to answer the question "is there a correlation between video games and crime?" In this project we will be comparing the crime rates between each of the states, and the types of video games played in that state. Using the crime data and the game data set, we found crime data on `r summary_info$num_states` states, which include: `r summary_info$states`. We also found the `r summary_info$num_games` games that are most popular in each state, which include: `r summary_info$games`. 
 
 ## Summary Table
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}

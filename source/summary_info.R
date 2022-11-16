@@ -8,11 +8,12 @@ game_data <- read.csv(file = "~/Documents/info201/Project/project-group-5-sectio
 
 #summary list
 summary_info <- list()
-summary_info$states <- game_data$states
+summary_info$states <- game_data$State
 summary_info$num_states <- nrow(crimes_against_persons)
-summary_info$games <- game_data$videogames
+summary_info$games <- game_data$Video.Games
 summary_info$num_games <- nrow(game_data)
-summary_info$total_offenses <- crimes_against_persons$Total.Offenses +
+summary_info$total_offenses_state <- crimes_against_persons$Total.Offenses +
   crimes_against_property$Total.Offenses +
   crimes_against_society$Total.Offenses
+summary_info$total_offenses_us <- sum(summary_info$total_offenses_state)
 
