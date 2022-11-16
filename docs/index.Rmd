@@ -29,13 +29,17 @@ library("ggplot2")
 source("../source/first_chart.R")
 plot
 ```
-
+This bar chart displays the rate of crime in each individual state. From the chart
+can derive the differences in the rate of crime which we can later use to correlate
+the crime rate with the genre of games. 
 ### Chart 2: Scatter Plot (States vs Total Offenses)
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library("ggplot2")
 source("../source/second_chart.R")
 scatter_offenses
 ```
+This scatter plot shows the crime rate in each state. This will be used to compare visually
+individual states to the national average crime rate.
 
 ### Chart 3: US Map (Most Popular Games in Each State)
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
@@ -47,3 +51,4 @@ library("dplyr")
 source("../source/third_chart.R")
 map
 ```
+This chart displays a visual map of the most popular games in each state. Which can be used to correlated the type of games most frequently played to the crime rate and or most popular type of crime.
