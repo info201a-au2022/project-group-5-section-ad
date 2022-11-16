@@ -3,11 +3,19 @@
 library(dplyr)
 library(stringr)
 
+<<<<<<< HEAD
 # Loading ata
 crimes_against_person <- read.csv(file = "~/Documents/info201/Project/project-group-5-section-ad/data/Crimes_Against_Persons_by_State_2021.csv")
 crimes_against_property <- read.csv(file = "~/Documents/info201/Project/project-group-5-section-ad/data/Crimes_Against_Property_by_State_2021.csv")
 crimes_against_society <- read.csv(file = "~/Documents/info201/Project/project-group-5-section-ad/data/Crimes_Against_Society_by_State_2021.csv")
 games_data <- read.csv(file = "~/Documents/info201/Project/project-group-5-section-ad/data/game_data.csv")
+=======
+# Data
+crimes_against_person <- read.csv(file = "~/Documents/info201/project-group-5-section-ad/data/Crimes_Against_Persons_by_State_2021.csv")
+crimes_against_property <- read.csv(file = "~/Documents/info201/project-group-5-section-ad/data/Crimes_Against_Property_by_State_2021.csv")
+crimes_against_society <- read.csv(file = "~/Documents/info201/project-group-5-section-ad/data/Crimes_Against_Society_by_State_2021.csv")
+games_data <- read.csv(file = "~/Documents/info201/project-group-5-section-ad/data/game_data.csv")
+>>>>>>> 2414debf8b7cfe52ccaf8cfe57b53addd96afbe2
 
 # Merging data from all crimes together
 crimes_person_property <- left_join(crimes_against_person, crimes_against_property, by = "State")
