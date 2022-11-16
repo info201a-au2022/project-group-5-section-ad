@@ -8,5 +8,7 @@ df <- data.frame(states = crimes_table$State,
                    total_offenses = crimes_table$Total_Offenses)
 
 plot <- ggplot(df, aes(x = states, y = total_offenses)) + 
-  geom_bar(stat = "identity")
+  geom_bar(stat = "identity") +
+  labs(title = "Bar Plot: States vs Total Offenses")
+
 plot

@@ -36,5 +36,11 @@ scatter_offenses
 ```
 
 ### Chart 3: idk
-```{r echo=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library("tidyverse")
+library("ggplot2")
+library("maps")
+library("dyplr")
+source("../source/third_chart.R")
+map
 ```
