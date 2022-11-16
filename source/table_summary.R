@@ -4,7 +4,7 @@ library(dplyr)
 library(stringr)
 
 
-# Loading ata
+# Loading data
 crimes_against_person <- read.csv(file = "~/Documents/info201/Project/project-group-5-section-ad/data/Crimes_Against_Persons_by_State_2021.csv")
 crimes_against_property <- read.csv(file = "~/Documents/info201/Project/project-group-5-section-ad/data/Crimes_Against_Property_by_State_2021.csv")
 crimes_against_society <- read.csv(file = "~/Documents/info201/Project/project-group-5-section-ad/data/Crimes_Against_Society_by_State_2021.csv")

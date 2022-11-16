@@ -10,8 +10,8 @@ game_data <- read.csv(file = "~/Documents/info201/Project/project-group-5-sectio
 summary_info <- list()
 summary_info$states <- game_data$State
 summary_info$num_states <- nrow(crimes_against_persons)
-summary_info$games <- game_data$Video.Games
-summary_info$num_games <- nrow(game_data)
+summary_info$games <- unique(game_data$Video.Games)
+summary_info$num_games <- length(unique(game_data$Video.Games))
 summary_info$total_offenses_state <- crimes_against_persons$Total.Offenses +
   crimes_against_property$Total.Offenses +
   crimes_against_society$Total.Offenses
