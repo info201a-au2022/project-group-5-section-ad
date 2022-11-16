@@ -10,33 +10,34 @@ source("../source/summary_info.R")
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-#Dynamic Paragraph
+# Dynamic Paragraph
 
 
-##Table 
+## Table
 ```{r echo=FALSE}
 source("../source/table_summary.R")
 table <- load("table_summary.R")
 table
 ```
-##Three Charts
+
+### Chart 1: Bar Plot (States vs Total Offenses)
 ```{r echo=FALSE}
 source("../source/first_chart.R")
 chartOne <- load("first_chart.R")
 chartOne
 ```
 
+### Chart 2: Scatter Plot (States vs Total Offenses)
 ```{r echo=FALSE}
 source("../source/second_chart.R")
 chartTwo <- load("second_chart.R")
 chartTwo
 ```
 
+### Chart 3: idk
 ```{r echo=FALSE}
 source("../source/third_chart.R")
 chartThree <- load("third_chart.R")
 chartThree
 
 ```
-
-
