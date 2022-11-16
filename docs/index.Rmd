@@ -35,12 +35,13 @@ source("../source/second_chart.R")
 scatter_offenses
 ```
 
-### Chart 3: idk
+### Chart 3: US Map (Most Popular Games in Each State)
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library("tidyverse")
+library("lubridate")
 library("ggplot2")
 library("maps")
-library("dyplr")
+library("dplyr")
 source("../source/third_chart.R")
 map
 ```

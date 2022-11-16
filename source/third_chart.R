@@ -5,7 +5,7 @@ game_state <- select(game_state, -X)
 library("tidyverse")
 library("ggplot2")
 library("maps")
-library("dyplr")
+library("dplyr")
 
 mapdata <- map_data("state")
 colnames(game_state) <- c("region", "Video.Games")
