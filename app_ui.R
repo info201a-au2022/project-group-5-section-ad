@@ -75,17 +75,17 @@ scatter_ui <- fluidPage(
 )
 
 # Defines a variable 'bar_ui' that is used to show a bar plot
-#bar_ui <- fluidPage(
-#  h1("Rates of Crimes"),
-#  sidebarLayout(
-#    sidebarPanel(
-#      state_bar
-#    ),
-#    mainPanel(
-#      plotlyOutput("bar")
-#    )
-#  )
-#)
+bar_ui <- fluidPage(
+  h1("Rates of Crimes"),
+  sidebarLayout(
+    sidebarPanel(
+      state_bar
+    ),
+    mainPanel(
+      plotlyOutput("bar")
+    )
+  )
+)
 
 # Defines a variable 'takeaway_ui' that is used to format a takeaways page
 takeaway_ui <- fluidPage(
