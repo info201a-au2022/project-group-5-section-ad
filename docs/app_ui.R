@@ -1,7 +1,6 @@
 # ui.R
 library(shiny)
 library(plotly)
-#source("~/Documents/info201/Project/project-group-5-section-ad/docs/index.Rmd")
 
 
 # Defines a variable 'Introduction' that is used to explain about the project and goals

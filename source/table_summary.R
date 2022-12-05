@@ -33,4 +33,4 @@ crimes_table <- left_join(crimes_table, games_data, by = "State")
 
 # Groups crimes data by state
 crimes_table <- crimes_table %>%
-  group_by(State)
+  group_by(Total_Offenses)
