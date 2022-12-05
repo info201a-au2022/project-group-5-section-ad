@@ -3,29 +3,21 @@ library(plotly)
 library(stringr)
 
 ### Build Scatter ###
-build_scatter <- function(data,  search = "", xvar = "population", yvar = "votes") {
-  # Get x and y max
-  xmax <- max(data[,xvar]) * 1.5
-  ymax <- max(data[,yvar]) * 1.5
-  
+build_scatter <- function(data, input) {
   # Filter data based on search 
   data <- data %>% 
-    filter(grepl(search, state))
+    filter(grepl(input, state))
   
   # Plot data
-  p <- plot_ly(x = data[, xvar],
-            y = data[, yvar], 
+  p <- plot_ly(x = data$State,
+            y = data$Total_Offenses, 
             mode="markers", 
             marker = list(
               opacity = .4, 
               size = 10
             )) %>% 
-    layout(xaxis = list(range = c(0, xmax), title = xvar), 
-           yaxis = list(range = c(0, ymax), title = yvar)
+    layout(xaxis = list(range = c(0, xmax), title = input), 
+           yaxis = list(range = c(0, ymax), title = "Total Offenses")
     )
   return(p)
-}
-
-build_scatter1 <- function(data) {
-  
 }

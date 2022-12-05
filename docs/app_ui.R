@@ -43,7 +43,6 @@ select_state <- selectInput(
   inputId = "state",
   label = "Choose a State",
   choices = summary_info$states,
-  selected = "Washington"
 )
 
 # Defines a variable 'bar_ui' that is used to show a bar plot
