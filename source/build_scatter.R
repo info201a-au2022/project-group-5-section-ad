@@ -25,3 +25,7 @@ build_scatter <- function(data,  search = "", xvar = "population", yvar = "votes
     )
   return(p)
 }
+
+build_scatter1 <- function(data) {
+  
+}

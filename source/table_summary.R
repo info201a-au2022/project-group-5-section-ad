@@ -25,7 +25,7 @@ crimes_table <- select(crimes_table, -Population.Covered.x)
 crimes_table <- select(crimes_table, -Population.Covered.y)
 crimes_table <- select(crimes_table, -Population.Covered)
 
-# Removing unecessary column from games data, specifically number labels of each states
+# Removing unnecessary column from games data, specifically number labels of each states
 games_data <- select(games_data, -X)
 
 # Merge data from games data into crimes table
@@ -34,4 +34,3 @@ crimes_table <- left_join(crimes_table, games_data, by = "State")
 # Groups crimes data by state
 crimes_table <- crimes_table %>%
   group_by(State)
-

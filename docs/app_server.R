@@ -17,8 +17,21 @@ server <- function(input, output) {
     
   #}) 
   
+  output$map <- renderPlotly({
+    return(build_map(df, df$total_offenses))
+  })
+  
   # Render a plotly object that returns your scatter plot
   #output$scatter <- renderPlotly({
     
   #})
+  
+  output$scatter <- renderPlotly({
+    return(build_scatter(df, "Washington"))
+  })
+  
+  output$bar <- renderPlotly({
+    return(build_bar(crimes_table, input$state))
+  })
+  
 }

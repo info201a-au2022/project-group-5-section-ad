@@ -33,3 +33,7 @@ build_map <- function(data, map.var) {
     )
    return(p)
 }
+
+build_map1 <- function(data) {
+  
+}

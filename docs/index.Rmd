@@ -13,9 +13,10 @@ summary_info
 
 # Dynamic Paragraph
 
-In 2021, there were `r summary_info$total_offenses_us` offenses that occurred throughout the United States. We, as a group, have known that there were studies done to determine if there was a correlation to video game violence to crime. Our project is an attempt at a comparative analysis between video games and crime. We aim to answer the question "is there a correlation between video games and crime?" In this project we will be comparing the crime rates between each of the states, and the types of video games played in that state. Using the crime data and the game data set, we found crime data on `r summary_info$num_states` states, which include: `r summary_info$states`. We also found the `r summary_info$num_games` unique games that are most popular in each state, which include: `r summary_info$games`. 
+In 2021, there were `r summary_info$total_offenses_us` offenses that occurred throughout the United States. We, as a group, have known that there were studies done to determine if there was a correlation to video game violence to crime. Our project is an attempt at a comparative analysis between video games and crime. We aim to answer the question "is there a correlation between video games and crime?" In this project we will be comparing the crime rates between each of the states, and the types of video games played in that state. Using the crime data and the game data set, we found crime data on `r summary_info$num_states` states, which include: `r summary_info$states`. We also found the `r summary_info$num_games` unique games that are most popular in each state, which include: `r summary_info$games`.
 
 ## Summary Table
+
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library("dplyr")
 library("stringr")
@@ -23,30 +24,30 @@ source("../source/table_summary.R")
 crimes_table
 ```
 
-Our summary table contains each state, the number of offenses in each category from our crime data sets, total number of offenses for each state and the most popular video game in each state. We included all of this information because we need to know what types of games correlate with which type of offenses occurred. We will figure out the largest type of offense in each state and compare that to the most popular video game of that state. That way we can see if the type of content in the video game correlates with the most frequent type of crime committed in that state. 
+Our summary table contains each state, the number of offenses in each category from our crime data sets, total number of offenses for each state and the most popular video game in each state. We included all of this information because we need to know what types of games correlate with which type of offenses occurred. We will figure out the largest type of offense in each state and compare that to the most popular video game of that state. That way we can see if the type of content in the video game correlates with the most frequent type of crime committed in that state.
 
 ### Chart 1: Bar Plot (States vs Total Offenses)
+
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library("ggplot2")
 source("../source/first_chart.R")
 plot
 ```
 
-This bar chart displays the rate of crime in each individual state. From the chart
-can derive the differences in the rate of crime which we can later use to correlate
-the crime rate with the genre of games. 
+This bar chart displays the rate of crime in each individual state. From the chart can derive the differences in the rate of crime which we can later use to correlate the crime rate with the genre of games.
 
 ### Chart 2: Scatter Plot (States vs Total Offenses)
+
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library("ggplot2")
 source("../source/second_chart.R")
 scatter_offenses
 ```
 
-This scatter plot shows the crime rate in each state. This will be used to compare visually
-individual states to the national average crime rate.
+This scatter plot shows the crime rate in each state. This will be used to compare visually individual states to the national average crime rate.
 
 ### Chart 3: US Map (Most Popular Games in Each State)
+
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library("tidyverse")
 library("lubridate")
