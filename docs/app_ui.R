@@ -28,7 +28,9 @@ map_ui <- fluidPage(
 scatter_ui <- fluidPage(
   h1("scatter plot"),
   sidebarLayout(
-    sidebarPanel(),
+    sidebarPanel(
+      select_state
+    ),
     mainPanel(
       plotlyOutput("scatter")
     )
@@ -40,8 +42,7 @@ scatter_ui <- fluidPage(
 select_state <- selectInput(
   inputId = "state",
   label = "Choose a State",
-  choices = crimes_table$State,
-  selected = "Washington"
+  choices = summary_info$states,
 )
 
 # Defines a variable 'bar_ui' that is used to show a bar plot
