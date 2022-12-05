@@ -3,7 +3,7 @@
 library("shiny")
 
 library("rsconnect")
-#rsconnect::setAccountInfo(name='tuhrong', token='14BA7A318BEF05AB410835E1D78BAB61', secret='9sGyy6bMnQj0EDBzOPMcd2AEjNKKNwWxnI7UCXag')
+#rsconnect::setAccountInfo(name='tuhrong', token='0D9738F96069EFFB72A9CC50CB18A6F9', secret='n4crwVmURPv48eZQeDbgyIsm9lZWfmcDlJ8XUcYI')
 #rsconnect::deployApp()
 
 # Executes the `app_ui.R` and `app_server.R` files.
