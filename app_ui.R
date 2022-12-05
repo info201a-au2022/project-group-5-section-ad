@@ -28,6 +28,8 @@ select_state <- selectInput(
   selected = "All States"
 )
 
+# Defines a variable 'state_bar' that is used to get the user's input about
+# which state they would like to see (specific for the bar plot)
 state_bar <- selectInput(
   inputId = "statebar",
   label = "Choose a State",
@@ -73,6 +75,7 @@ bar_ui <- fluidPage(
   )
 )
 
+# Defines a variable 'takeaway_ui' that is used to format a takeaways page
 takeaway_ui <- fluidPage(
   h1("Takeaways")
 )

@@ -17,7 +17,7 @@ server <- function(input, output) {
   #}) 
   
   output$map <- renderPlotly({
-    return(build_map(summary_info$games, input$state))
+    return(build_map(games_data, input$state))
   })
   
   # Render a plotly object that returns your scatter plot
