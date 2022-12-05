@@ -11,24 +11,17 @@ source("./source/table_summary.R")
 # Start shinyServer
 server <- function(input, output) { 
   
-  # Render a plotly object that returns your map
-  #output$map <- renderPlotly({ 
-  
-  #}) 
-  
+  # Render a plotly object that returns a map
   output$map <- renderPlotly({
     return(build_map(games_data, input$state))
   })
   
-  # Render a plotly object that returns your scatter plot
-  #output$scatter <- renderPlotly({
-  
-  #})
-  
+  # Render a plotly object that returns a scatter plot
   output$scatter <- renderPlotly({
     return(build_scatter(crimes_table, input$state))
   })
   
+  # Render a plotly object that returns a barplot
   output$bar <- renderPlotly({
     return(build_bar(crimes_table, input$statebar))
   })
