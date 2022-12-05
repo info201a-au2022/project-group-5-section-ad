@@ -5,10 +5,10 @@ library(stringr)
 
 
 # Loading data
-crimes_against_person <- read.csv(file = "~/Documents/info201/Project/project-group-5-section-ad/data/Crimes_Against_Persons_by_State_2021.csv", check.names=FALSE)
-crimes_against_property <- read.csv(file = "~/Documents/info201/Project/project-group-5-section-ad/data/Crimes_Against_Property_by_State_2021.csv", check.names=FALSE)
-crimes_against_society <- read.csv(file = "~/Documents/info201/Project/project-group-5-section-ad/data/Crimes_Against_Society_by_State_2021.csv", check.names=FALSE)
-games_data <- read.csv(file = "~/Documents/info201/Project/project-group-5-section-ad/data/game_data.csv", check.names=FALSE)
+crimes_against_person <- read.csv(file = "./data/Crimes_Against_Persons_by_State_2021.csv", check.names=FALSE)
+crimes_against_property <- read.csv(file = "./data/Crimes_Against_Property_by_State_2021.csv", check.names=FALSE)
+crimes_against_society <- read.csv(file = "./data/Crimes_Against_Society_by_State_2021.csv", check.names=FALSE)
+games_data <- read.csv(file = "./data/game_data.csv", check.names=FALSE)
 
 # Merging data from all crimes together
 crimes_person_property <- left_join(crimes_against_person, crimes_against_property, by = "State")

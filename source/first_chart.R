@@ -1,6 +1,6 @@
 #Bar Chart for total offenses per state
 
-source("~/Documents/info201/Project/project-group-5-section-ad/source/table_summary.R")
+source("./source/table_summary.R")
 
 library(ggplot2)
 

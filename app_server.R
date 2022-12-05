@@ -2,18 +2,18 @@
 library(dplyr)
 
 # Read in data
-source("~/Documents/info201/Project/project-group-5-section-ad/source/build_map.R")
-source("~/Documents/info201/Project/project-group-5-section-ad/source/build_scatter.R")
-source("~/Documents/info201/Project/project-group-5-section-ad/source/summary_info.R")
-source("~/Documents/info201/Project/project-group-5-section-ad/source/build_bar.R")
-source("~/Documents/info201/Project/project-group-5-section-ad/source/table_summary.R")
+source("./source/build_map.R")
+source("./source/build_scatter.R")
+source("./source/summary_info.R")
+source("./source/build_bar.R")
+source("./source/table_summary.R")
 
 # Start shinyServer
 server <- function(input, output) { 
   
   # Render a plotly object that returns your map
   #output$map <- renderPlotly({ 
-    
+  
   #}) 
   
   output$map <- renderPlotly({
@@ -22,7 +22,7 @@ server <- function(input, output) {
   
   # Render a plotly object that returns your scatter plot
   #output$scatter <- renderPlotly({
-    
+  
   #})
   
   output$scatter <- renderPlotly({
@@ -34,4 +34,3 @@ server <- function(input, output) {
   })
   
 }
-

@@ -1,6 +1,6 @@
 #map of united states and popular games
 
-game_state <- read.csv("~/Documents/info201/Project/project-group-5-section-ad/data/game_data.csv")
+game_state <- read.csv("./data/game_data.csv")
 game_state <- select(game_state, -X)
 library("tidyverse")
 library("ggplot2")
