@@ -17,3 +17,4 @@ build_bar <- function(data, input) {
     theme(axis.text.x = element_blank())
   return(plot)
 }
+
