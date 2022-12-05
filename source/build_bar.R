@@ -13,8 +13,8 @@ jk <- crimes_table
 
 jk <- jk %>% 
   filter(State == "Washington") %>% 
-  select(-Video.Games)
-jk <- jk %>% 
-  select(-State)
+  select(-Video.Games) %>% 
+  gather()
 
-plot(rev(stack(jk)))
+ggplot(jk, aes(key, value)) +
+  geom_col()

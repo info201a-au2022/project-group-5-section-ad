@@ -14,7 +14,9 @@ introduction <- fluidPage(
 map_ui <- fluidPage(
   h1("map"),
   sidebarLayout(
-    sidebarPanel(),
+    sidebarPanel(
+      select_state
+    ),
     mainPanel(
       plotlyOutput("map")
     )
@@ -56,12 +58,17 @@ bar_ui <- fluidPage(
   )
 )
 
+takeaway_ui <- fluidPage(
+  h1("Takeaways")
+)
+
 # Final webpage layout
 ui <- navbarPage(
   title = "Video Games Criminals",
   tabPanel("intro", introduction),
   tabPanel("scatterplot", scatter_ui),
   tabPanel("barplot", bar_ui),
-  tabPanel("map", map_ui)
+  tabPanel("map", map_ui),
+  tabPanel("Summary", takeaway_ui)
 )
 
