@@ -15,5 +15,9 @@ jk <- jk %>%
   filter(State == "Washington") %>% 
   select(-Video.Games) %>% 
   gather()
-ggplot(jk, aes(key, value)) + geom_col() + scale_y_continuous(breaks = seq(0, 500000, len = 50))
+jk <- jk[-1,]
+jk <- jk[-24,]
+jk$value=as.numeric(jk$value)
+View(jk)
+ggplot(jk, aes(key, value)) + geom_col() + scale_y_continuous(limits = c(0, 500000))
                                                               
