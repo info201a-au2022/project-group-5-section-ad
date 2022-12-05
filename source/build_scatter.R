@@ -4,20 +4,20 @@ library(stringr)
 
 ### Build Scatter ###
 build_scatter <- function(data, input) {
-  # Filter data based on search 
-  data <- data %>% 
-    filter(grepl(input, state))
-  
-  # Plot data
-  p <- plot_ly(x = data$State,
-            y = data$Total_Offenses, 
-            mode="markers", 
-            marker = list(
-              opacity = .4, 
-              size = 10
-            )) %>% 
-    layout(xaxis = list(range = c(0, xmax), title = input), 
-           yaxis = list(range = c(0, ymax), title = "Total Offenses")
-    )
-  return(p)
+  if (input == "All States") {
+    plot <- ggplot(data, aes(x = State, y = Total_Offenses, col = State)) +
+      geom_point() +
+      coord_cartesian(xlim = c(0, 50),
+                      ylim = c(0, 1640000))
+    return(plot)
+  } else {
+    data <- data %>% 
+      filter(State %in% input)
+    plot <- ggplot(data = data, aes(x = State, y = Total_Offenses, col = State)) +
+      geom_point() +
+      coord_cartesian(xlim = c(0, 50),
+                      ylim = c(0, 1640000))
+    return(plot)
+  }
 }
+

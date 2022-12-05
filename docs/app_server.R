@@ -30,7 +30,7 @@ server <- function(input, output) {
   })
   
   output$bar <- renderPlotly({
-    return(build_bar(crimes_table, input$state))
+    return(build_bar(crimes_table, input$statebar))
   })
   
 }

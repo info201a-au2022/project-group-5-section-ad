@@ -4,6 +4,8 @@ library("ggplot2")
 
 # Build Bar Plot Function
 build_bar <- function(data, input) {
+  
+  
   new_data <- data %>% 
     filter(State == input) %>% 
     select(-Video.Games) %>% 

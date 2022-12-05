@@ -19,9 +19,7 @@ map_ui <- fluidPage(
     mainPanel(
       plotlyOutput("map")
     )
-  ),
-  h1("Summary"),
-  p("djksldfjds")
+  )
 )
 
 # Defines a variable 'scatter_ui' that is used to show a scatter plot
@@ -42,7 +40,14 @@ scatter_ui <- fluidPage(
 select_state <- selectInput(
   inputId = "state",
   label = "Choose a State",
-  choices = summary_info$states,
+  choices = c("All States", summary_info[["states"]]),
+  selected = "All States"
+)
+
+state_bar <- selectInput(
+  inputId = "statebar",
+  label = "Choose a State",
+  choices = summary_info[["states"]]
 )
 
 # Defines a variable 'bar_ui' that is used to show a bar plot
@@ -50,7 +55,7 @@ bar_ui <- fluidPage(
   h1("bar plot"),
   sidebarLayout(
     sidebarPanel(
-      select_state
+      state_bar
     ),
     mainPanel(
       plotlyOutput("bar")
