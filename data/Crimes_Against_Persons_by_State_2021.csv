@@ -1,12 +1,4 @@
-State,"Population
-Covered","Total
-Offenses","Assault
-Offenses","Homicide
-Offenses","Human
-Trafficking
-Offenses","Kidnapping/
-Abduction","Sex
-Offenses"
+State,Population_Covered,Total_Offenses,Assault_Offenses,Homicide_Offenses,Human_Trafficking_Offenses,Kidnapping_Abduction,Sex_Offenses
 Alabama,3734077,70855,68366,381,18,388,1702
 Alaska,402557,6858,5945,31,2,29,851
 Arizona,3949562,45372,40946,235,7,706,3478
