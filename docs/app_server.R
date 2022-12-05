@@ -27,7 +27,7 @@ server <- function(input, output) {
   #})
   
   output$scatter <- renderPlotly({
-    return(build_scatter(df, "Washington"))
+    return(build_scatter(crimes_table, input$state))
   })
   
   output$bar <- renderPlotly({
