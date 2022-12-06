@@ -17,6 +17,7 @@ build_scatter <- function(data, input) {
       filter(State %in% input)
     plot <- ggplot(data = data, aes(x = State, y = Total_Offenses, col = State)) +
       geom_point() +
+      coord_cartesian(xlim = c(0, 15)) +
       theme(axis.text.x = element_blank(),
             legend.position="none"
             ) + 

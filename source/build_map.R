@@ -9,14 +9,14 @@ library(tidyverse)
 
 build_map <- function(data, input) {
   map_data <- map_data("state")
-  colnames(data) <- c("region", "Video.Games")
+  colnames(data) <- c("region", "Video_Games")
   data$region <- tolower(data$region)
   map_data <- left_join(map_data, data, by = "region")
-  if(input != "All States") {
+  if(input != "All Games") {
     map_data <- map_data %>% 
-      filter(region %in% input)
+      filter(Video_Games %in% input)
   }
   plot <- ggplot(map_data, aes(x = long, y = lat, group=group)) +
-    geom_polygon(aes(fill = Video.Games), color = "black")
+    geom_polygon(aes(fill = Video_Games), color = "black")
   return(plot)
 }

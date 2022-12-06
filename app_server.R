@@ -13,7 +13,7 @@ server <- function(input, output) {
   
   # Render a plotly object that returns a map
   output$map <- renderPlotly({
-    return(build_map(games_data, input$state))
+    return(build_map(games_data, input$games))
   })
   
   # Render a plotly object that returns a scatter plot

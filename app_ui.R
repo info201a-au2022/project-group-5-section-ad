@@ -33,12 +33,21 @@ state_bar <- selectInput(
   choices = summary_info[["states"]]
 )
 
+# Defines a variable 'select_game' that is used to get the user's input about 
+# which games they would like to see
+select_game <- selectInput(
+  inputId = "games",
+  label = "Choose a Game",
+  choices = c("All Games", summary_info[["games"]]),
+  selected = "All Games"
+)
+
 # Defines a variable 'map_ui' that is used to show a map
 map_ui <- fluidPage(
   h1("map"),
   sidebarLayout(
     sidebarPanel(
-      select_state
+      select_game
     ),
     mainPanel(
       plotlyOutput("map")
@@ -79,7 +88,14 @@ takeaway_ui <- fluidPage(
 
 report_ui <- fluidPage(
   h1("Report"),
-  h1("Is There a Correlation Between Video Games and Crime Rates?"),
+  
+  h2("Problem Domain:"),
+  h3("Background:"),
+  p("As a group collectively, we like to play games whether that be first-person shooters or party games on the Nintendo Switch. And recently there have been a lot of shootings and criminal activity that has been happening near the UW campus. We have all also heard that violent video games may cause an increase in violent behaviors in a person. So we were wondering if the violence from video games had any impact on whether that person affected by video games would commit a crime."),
+  h3("Stakeholders:"),
+  p("The stakeholders in our situation are adolescents and the general public. In this case, adolescents are a direct stakeholder because the majority of the player base for most video games is adolescents. So they are the generation that is most susceptible to the violence that is in video games. Which can rub off into their personalities and potentially make them more violent. An indirect stakeholder in our project is the general public. The general public is a stakeholder because they will be the ones that are affected by the crimes that people make. People with very violent personalities and tendencies are more likely to commit crimes and hurt others."),
+  
+  h2("Is There a Correlation Between Video Games and Crime Rates?"),
   h2("Research Questions:"),
   h4("What are the crime rates of the different crimes in each states?"),
   h4("What is the most popular video games in each state?"),
