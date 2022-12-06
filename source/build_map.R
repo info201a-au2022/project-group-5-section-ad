@@ -14,7 +14,7 @@ build_map <- function(data, input) {
   map_data <- left_join(map_data, data, by = "region")
   if(input != "All States") {
     map_data <- map_data %>% 
-      filter(region == input)
+      filter(region %in% input)
   }
   plot <- ggplot(map_data, aes(x = long, y = lat, group=group)) +
     geom_polygon(aes(fill = Video.Games), color = "black")
