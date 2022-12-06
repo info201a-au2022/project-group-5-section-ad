@@ -6,9 +6,9 @@ source("./source/summary_info.R")
 
 # Defines a variable 'Introduction' that is used to explain about the project and goals
 introduction <- fluidPage(
-  h3("Authors: Truong Le (truongle@uw.edu), Jerry Tang (Jertang@uw.edu), Jesse Kim(jkim1224@uw.edu)")
-  h3("Affiliation: INFO-201: Technical Foundations of Informatics - The Information School - University of Washington")
-  h3("Autumn 2022")
+  h3("Authors: Truong Le (truongle@uw.edu), Jerry Tang (Jertang@uw.edu), Jesse Kim(jkim1224@uw.edu)"),
+  h3("Affiliation: INFO-201: Technical Foundations of Informatics - The Information School - University of Washington"),
+  h3("Autumn 2022"),
   
   h1("Introduction"),
   p("For years, people have associated playing video games to violence, believing that people who play video games are more likely to become criminals. This has piqued the interest of the  research topic of “is video games a cause of crime rates?” To answer this question, we will have to look at two types of data. The first being the number of crimes that occurred in each year  in the United States. The second is the most popular game each year. With this data, we will be able to see if the genre of the game will have a factor in the number of crimes."),
