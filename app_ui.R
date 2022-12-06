@@ -99,3 +99,4 @@ ui <- navbarPage(
   tabPanel("Most Popular Video Games", map_ui),
   tabPanel("Findings", takeaway_ui)
 )
+
