@@ -1,35 +1,22 @@
 # BuildMap file: function that returns a plotly map
 library(plotly)
-library(stringr)
+library(ggplot2)
+library(maps)
+library(dplyr)
+library(tidyverse)
 
 # BuildMap function: fill this in with a function that returns a map:
-# Derived from: https://plot.ly/r/choropleth-maps/
 
-build_map <- function(data, map.var) {
-  # give state boundaries a white border
-  l <- list(color = toRGB("white"), width = 2)
-  
-  # specify some map projection/options
-  g <- list(
-    scope = 'usa',
-    projection = list(type = 'albers usa'),
-    showlakes = TRUE,
-    lakecolor = toRGB('white')
-  )
-  
-  # Make equation for map color / text
-  var.equation <- paste0('~', map.var)
-  
-  # Plot
-  p <- plot_geo(data, locationmode = 'USA-states') %>%
-    add_trace(
-      z = data[,map.var], text = ~state, locations = ~code,
-      color = data[,map.var], colors = 'Purples'
-    ) %>%
-    colorbar(title = "Color Title") %>%
-    layout(
-      title = str_to_title(map.var),
-      geo = g
-    )
-   return(p)
+build_map <- function(data, input) {
+  map_data <- map_data("state")
+  colnames(data) <- c("region", "Video.Games")
+  data$region <- tolower(data$region)
+  map_data <- left_join(map_data, data, by = "region")
+  if(input != "All States") {
+    map_data <- map_data %>% 
+      filter(region == input)
+  }
+  plot <- ggplot(map_data, aes(x = long, y = lat, group=group)) +
+    geom_polygon(aes(fill = Video.Games), color = "black")
+  return(plot)
 }

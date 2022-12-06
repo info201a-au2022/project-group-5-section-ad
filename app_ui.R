@@ -11,7 +11,7 @@ introduction <- fluidPage(
   
   h2("Problem Domain:"),
   h3("Background:"),
-  p("For years, people have associated playing video games to violence, believing that people who play video games are more likely to become criminals. This has piqued the interest of the  research topic of “is video games a cause of crime rates?” To answer this question, we will have to look at two types of data. The first being the number of crimes that occurred in each year  in the United States. The second is the most popular game each year. With this data, we will be able to see if the genre of the game will have a factor in the number of crimes."),
+  p("As a group collectively, we like to play games whether that be first-person shooters or party games on the Nintendo Switch. And recently there have been a lot of shootings and criminal activity that has been happening near the UW campus. We have all also heard that violent video games may cause an increase in violent behaviors in a person. So we were wondering if the violence from video games had any impact on whether that person affected by video games would commit a crime."),
   h3("Stakeholders:"),
   p("The stakeholders in our situation are adolescents and the general public. In this case, adolescents are a direct stakeholder because the majority of the player base for most video games is adolescents. So they are the generation that is most susceptible to the violence that is in video games. Which can rub off into their personalities and potentially make them more violent. An indirect stakeholder in our project is the general public. The general public is a stakeholder because they will be the ones that are affected by the crimes that people make. People with very violent personalities and tendencies are more likely to commit crimes and hurt others.")
 
@@ -40,6 +40,8 @@ select_state <- selectInput(
   selected = "All States"
 )
 
+# Defines a variable 'state_bar' that is used to get the user's input about
+# which state they would like to see (specific for the bar plot)
 state_bar <- selectInput(
   inputId = "statebar",
   label = "Choose a State",
@@ -73,18 +75,19 @@ scatter_ui <- fluidPage(
 )
 
 # Defines a variable 'bar_ui' that is used to show a bar plot
-#bar_ui <- fluidPage(
-#  h1("Rates of Crimes"),
-#  sidebarLayout(
-#    sidebarPanel(
-#      state_bar
-#    ),
-#    mainPanel(
-#      plotlyOutput("bar")
-#    )
-#  )
-#)
+bar_ui <- fluidPage(
+  h1("Rates of Crimes"),
+  sidebarLayout(
+    sidebarPanel(
+      state_bar
+    ),
+    mainPanel(
+      plotlyOutput("bar")
+    )
+  )
+)
 
+# Defines a variable 'takeaway_ui' that is used to format a takeaways page
 takeaway_ui <- fluidPage(
   h1("Takeaways")
 )
