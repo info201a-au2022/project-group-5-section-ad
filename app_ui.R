@@ -119,6 +119,9 @@ report_ui <- fluidPage(
   p(" What type of crimes are most committed?"),
   p("This question should be asked because we need to see if the type of crimes that are committed is associated with the type of games that are being played the most. With this type of information, we are able to see whether video games are igniting the fuel to commit crimes, or that the type of crime that is being committed is taught by the video games they played."),
   
+  h2("Dataset"),
+  p("The dataset that is being presented is related to our research questions because it answers the questions that are being asked. It includes the amount of crimes reported in the United States each year, what types of crimes were committed, and the most popular games each year. For our research, the data is collected by two organizations. The crime datas are collected by the “Federal Bureau of Investigation.” The video games data are collected by the organization NPD, a market research organization. The crime data is funded by taxes. However, NPD is funded by industries. The people who benefit the most through NPD are the industries who funded NPD, while crime data benefits the government officials. The datas are held secure and validated because higher up rely on the data to be accurate to use. For NPD, it is these big industries that rely on the data, for crime data, it is the government officials. We believe that the data are credible because the companies are being paid to give accurate data for the industries, helping the industry see what they are doing is working or not. We obtained the data through their respective websites"),
+  
   
   h2("Findings"),
   
@@ -126,8 +129,15 @@ report_ui <- fluidPage(
   
   h2("Conclusion"),
   
-  h3("References")
+  h2("References"),
   
+  p("Federal Bureau of Investigation. \"Crimes Against Persons Offenses.\" Retrieved October 30, 2022. From: https://crime-data-explorer.fr.gov/pages/home"),
+  
+  p("Federal Bureau of Investigation. \"Crimes Against Society Offenses.\" Retrieved October 30, 2022. From: https://crime-data-explorer.fr.gov/pages/home"),
+  
+  p("Federal Bureau of Investigation. \"Crimes Against Property Offenses.\" Retrieved October 30, 2022. From: https://crime-data-explorer.fr.gov/pages/home"),
+  
+  p("Grubb, Jeff. \"NPD: The 20 best-selling games of 2019 in the U.S.\" Retrieved October 30, 2022. From: https://venturebeat.com/games/20-best-selling-games-of-2019")
   
 )
 
