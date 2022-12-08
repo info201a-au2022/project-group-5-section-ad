@@ -10,7 +10,7 @@ introduction <- fluidPage(
   tags$head(
     tags$style(HTML("
       body {
-        background-color: gray;
+        background-color: black;
         color: white;
       }
     "))
@@ -79,6 +79,80 @@ map_ui <- fluidPage(
     mainPanel(
       plotlyOutput("map")
     )
+  ),
+  tags$footer("Information About the Video Games: ",
+              tags$a(
+                "Grand Theft Auto V, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V"),
+              tags$a(
+                "Bioshock, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/BioShock"),
+              tags$a(
+                "Cyberpunk 2077, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Cyberpunk_2077"),
+              tags$a(
+                "Doom, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Doom_(1993_video_game)"),
+              tags$a(
+                "Elden Ring, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Elden_Ring"),
+              tags$a(
+                "Final Fantasy VII, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Final_Fantasy_VII"),
+              tags$a(
+                "God of War, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/God_of_War_Ragnar%C3%B6k"),
+              tags$a(
+                "Hades, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Hades_(video_game)"),
+              tags$a(
+                "Horizon Zero Dawn, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Horizon_Zero_Dawn"),
+              tags$a(
+                "Portal, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Portal_(video_game)"),
+              tags$a(
+                "Red Dead Redemption 2, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Red_Dead_Redemption_2"),
+              tags$a(
+                "Resident Evil 2, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Resident_Evil_2"),
+              tags$a(
+                "Stardew Valley, ",
+                target = "_blank",
+                href = "https://stardewvalleywiki.com/Stardew_Valley_Wiki"),
+              tags$a(
+                "Teenage Mutant Ninja Turtles: Shredder's Revenge, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Teenage_Mutant_Ninja_Turtles:_Shredder%27s_Revenge"),
+              tags$a(
+                "The Elder Scrolls V: Skyrim - Special Edition, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Cyberpunk_2077"),
+              tags$a(
+                "The Legend of Zelda: Breathe of the Wild, ",
+                target = "_blank",
+                href = "https://elderscrolls.fandom.com/wiki/The_Elder_Scrolls_V:_Skyrim_Special_Edition"),
+              tags$a(
+                "The Witcher 3: Wild Hunt, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt"),
+              tags$a(
+                "Tomb Raider",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Tomb_Raider")
   )
 )
 
@@ -120,17 +194,20 @@ takeaway_ui <- fluidPage(
   h1("Takeaways"),
 
   
-  h3("Total Crime in All States"),
+  h4("Total Crime in All States"),
   p("We noticed that the rate of crime for all the states tend to all between 0 and 500,000 offeneses with Texas as an outlier having over 1,500,000 offenses. But when comparing the frequency of each type of crime compared to its total amount of crimes Texas is similar to any other state. Because of the lack of evidence we can’t conclude that video games cause more crime since all the states seem consistant with its rates. "),
   
-  h3("Rates of Each Type of Crime"),
+  h4("Rates of Each Type of Crime"),
+  p("The bigguest take away from comparing the types and rate of each crime from the states is that we noticed that the most frequent crime is assult offenses and larceny/theft offenses. This trend is consistant throughout almost every state. When thinking about the scope of video games as a cause this suggests that our focus should be on game with action and or of the shooter genre. Which is often what media outlets blame video games to cause young teens to do."),
+  
+  h4("Rates of Each Type of Crime"),
   p("The biggest take away from comparing the types and rate of each crime from the states is that we noticed that the most frequent crime is assult offenses and larceny/theft offenses. This trend is consistant throughout almost every state. When thinking about the scope of video games as a cause this suggests that our focus should be on game with action and or of the shooter genre. Which is often what media outlets blame video games to cause young teens to do."),
   
-  h3("Most Popular Game in Each State"),
+  h4("Most Popular Game in Each State"),
   p("From looking at the popular games from each state we did notice that a majority of the states’ most popular games tended to fall under a type of action or shooter genre. Which reflects our assumption of what to focus on in our previous finding. Although when comparing the rates of crime and type between states with games that involve action and those that don’t, the type of crime rate and frequency of which tend not to differ."),
   
 
-    h2("Content:"),
+  h2("Content:"),
   p("In looking at our research, we were able to answer our questions by pairing research questions together when answering them. This allowed for us to compare the data that we found from each interactive graphs. For instance, comparing the most popular video game in a certain along with their most committed crime."),
   h2("What Conclusions Did We Come Up With From Our Research?"),
   p("- There is no clear indication of video games influencing individuals to become criminals because despite the type of video game that was most played in a state, the types of crimes that were most committed was still the same."),
@@ -181,20 +258,39 @@ report_ui <- fluidPage(
   p("- Every state had similar statistics for total number of crimes committed except for Texas."),
   
   h2("Discussion: "),
-  p(""),
+  p("When doing our research, we were able to see many trends throughout the states in the United. When comparing the total number crimes committed through our scatter plot, we are able to see that every state were clsoe to each other in total number of crimes committed without Texas being the only state that had a big gap. Despite this, we were not able to see any correlation between the total number of crimes committed and the most played video games in each state. When comparing the most popular video game in Texas and the other states, for instance, Illinoise and Arizona. Both of the states had 'Grand Theft Auto V' as their most played video game, however, none of the two state had total number of crimes committed close to Texas. Through our research, we were able to also see that every state had similar statistic when looking at the two highest committed crimes. However, when we compare the highest committed crimes of each state to their most popular video game, we are not able to see any trend because although some states had video games that were similar to the crimes committed, there were many states that didn't have their most popular video game being similar to the type of crime that was committed. But what does all of our research tell us about our data? We found out that there was no clear connection that video games influence individuals to become criminals. However, from our research, it has created a new research that will further develop our original research. From our research, we are able to see that there was a correlation total number of crimes committed and the type of video game that was played. This makes us question whether criminals enjoy playing video games, specifically crime related ones to pique their interests in crimes or find methods of how to commit crimes."),
   
   h2("Conclusion: "),
+  p("From our experiment, we want individuals like us to realize that we should not always trust the information that is presented to us. Despite news outlet creating this theory that video games creates criminals, we were not able to find a correlation that proves this theory right. However, we are able to see that there was a trend between each state in total number of crimes committed because every state were fairly close to each other in total number of crimes committed. Another trend was that each state had the same data of the type of crime that was most committed. The two highest committed crimes in each states were theft and assault. Because there was no clear correlation between video games, total number of crimes committed, and the type of crimes that were committed, as a group we have decided to claim that video games is not a factor of an individual becoming a criminal. Because our research is focused on video games, which is a limitation of ours, we are not able to find the factor that makes an individual become a criminal."),
   
   h2("References: "),
+  tags$footer("Federal Bureau of Investigation. \"Crimes Against Persons Offenses.\" Retrieved October 30, 2022. From:",
+              tags$a(
+                "https://crime-data-explorer.fr.cloud.gov/pages/home",
+                target = "_blank",
+                href = "https://crime-data-explorer.fr.cloud.gov/pages/home")
+  ),
   
-  p("Federal Bureau of Investigation. \"Crimes Against Persons Offenses.\" Retrieved October 30, 2022. From: https://crime-data-explorer.fr.gov/pages/home"),
+  tags$footer("Federal Bureau of Investigation. \"Crimes Against Society Offenses.\" Retrieved October 30, 2022. From: ",
+              tags$a(
+                "https://crime-data-explorer.fr.cloud.gov/pages/home",
+                target = "_blank",
+                href = "https://crime-data-explorer.fr.cloud.gov/pages/home")
+  ),
   
-  p("Federal Bureau of Investigation. \"Crimes Against Society Offenses.\" Retrieved October 30, 2022. From: https://crime-data-explorer.fr.gov/pages/home"),
+  tags$footer("Federal Bureau of Investigation. \"Crimes Against Propoerty Offenses.\" Retrieved October 30, 2022. From: ",
+              tags$a(
+                "https://crime-data-explorer.fr.cloud.gov/pages/home",
+                target = "_blank",
+                href = "https://crime-data-explorer.fr.cloud.gov/pages/home")
+  ),
   
-  p("Federal Bureau of Investigation. \"Crimes Against Property Offenses.\" Retrieved October 30, 2022. From: https://crime-data-explorer.fr.gov/pages/home"),
-  
-  p("Grubb, Jeff. \"NPD: The 20 best-selling games of 2019 in the U.S.\" Retrieved October 30, 2022. From: https://venturebeat.com/games/20-best-selling-games-of-2019")
-  
+  tags$footer("Grubb, Jeff. \"NPD: The 20 best-selling games of 2019 in the U.S.\" Retrieved October 30, 2022. From: ",
+              tags$a(
+                "https://venturebeat.com/games/20-best-selling-games-of-2019",
+                target = "_blank",
+                href = "https://venturebeat.com/games/20-best-selling-games-of-2019")
+  )
 )
 
 # Final webpage layout
