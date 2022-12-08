@@ -2,6 +2,7 @@
 library(shiny)
 library(plotly)
 source("./source/summary_info.R")
+source("./source/table_summary.R")
 
 
 # Defines a variable 'Introduction' that is used to explain about the project and goals
