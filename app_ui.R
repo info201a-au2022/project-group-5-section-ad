@@ -10,6 +10,14 @@ introduction <- fluidPage(
   h1("Introduction"),
   p("For years, people have associated playing video games to violence, believing that people who play video games are more likely to become criminals. This has piqued the interest of the  research topic of “is video games a cause of crime rates?” To answer this question, we will have to look at two types of data. The first being the number of crimes that occurred in each year  in the United States. The second is the most popular game each year. With this data, we will be able to see if the genre of the game will have a factor in the number of crimes."),
   
+  h3("Research Questions"),
+  
+  p("What is the most popular game each year in the United States?"),
+  
+  p("How many crimes are committed in the United States?"),
+  
+  p("What type of crimes are most committed?"),
+  
   h3("Problem Domain:"),
   h3("Background:"),
   p("As a group collectively, we like to play games whether that be first-person shooters or party games on the Nintendo Switch. And recently there have been a lot of shootings and criminal activity that has been happening near the UW campus. We have all also heard that violent video games may cause an increase in violent behaviors in a person. So we were wondering if the violence from video games had any impact on whether that person affected by video games would commit a crime."),
@@ -45,7 +53,9 @@ select_game <- selectInput(
 
 # Defines a variable 'map_ui' that is used to show a map
 map_ui <- fluidPage(
-  h1("map"),
+  h1("Game Map"),
+  
+  p("This is a multivariable map that displays the most popular game in each state. Each game is represented by a different color. The type of games can be filtered to show which state it is most popular in. This is useful when used to correlate what type of crime a game may cause."),
   sidebarLayout(
     sidebarPanel(
       select_game
@@ -59,6 +69,8 @@ map_ui <- fluidPage(
 # Defines a variable 'scatter_ui' that is used to show a scatter plot
 scatter_ui <- fluidPage(
   h1("Total Number of Offenses"),
+  
+  p("This is a multivariable scatterplot chart that displays the total number of offenses in every state. A colored dot represents each state. States can be individually selected to display their total amount of offenses and or individually removed to compare the number of offenses per state. This is useful when comparing the number of offenses between states and when used our other charts can show correlations between video games and offenses."),
   sidebarLayout(
     sidebarPanel(
       select_state
@@ -69,9 +81,13 @@ scatter_ui <- fluidPage(
   )
 )
 
+
 # Defines a variable 'bar_ui' that is used to show a bar plot
 bar_ui <- fluidPage(
   h1("Rates of Crimes"),
+  
+  p("This is a multivariable bar chart that displays the amount and type of crime in each individual state. Each type of crime is highlighted in a different color. The number of types of crime is represented by the y-axis (Rates of Crime). The types of crime can be removed or added. This is useful when correlating crime and video games since certain crimes are visualized and or glorified in certain genres of games. "),
+  
   sidebarLayout(
     sidebarPanel(
       state_bar
@@ -81,6 +97,7 @@ bar_ui <- fluidPage(
     )
   )
 )
+
 
 # Defines a variable 'takeaway_ui' that is used to format a takeaways page
 takeaway_ui <- fluidPage(
@@ -110,13 +127,13 @@ report_ui <- fluidPage(
   
   h2("Research Questions"),
   
-  p(" What is the most popular game each year in the United States? "),
+  p("What is the most popular game each year in the United States?"),
   p("This is an important question to ask because not every game is a violence game. If we are able to see what the most popular game is each year, we are able to look at the genre of the game to see whether there is a correlation between the type of game that is being played and crimes."),
   
   p("How many crimes are committed in the United States?"),
   p("We need to look at the amount of crimes in the United States because that is where the most attention is focused on on news outlets and researches. If there is an association between crimes and video games, we will see an increase in crime when."),
   
-  p(" What type of crimes are most committed?"),
+  p("What type of crimes are most committed?"),
   p("This question should be asked because we need to see if the type of crimes that are committed is associated with the type of games that are being played the most. With this type of information, we are able to see whether video games are igniting the fuel to commit crimes, or that the type of crime that is being committed is taught by the video games they played."),
   
   h2("Dataset"),
