@@ -16,7 +16,9 @@ build_map <- function(data, input) {
     map_data <- map_data %>% 
       filter(Video_Games %in% input)
   }
-  plot <- ggplot(map_data, aes(x = long, y = lat, group=group)) +
+  plot <- ggplot(map_data, aes(x = long, y = lat, group=group, 
+                               text= paste("State: ", toupper(map_data$region), "<br>", 
+                               "Video Game: ", map_data$Video_Games))) +
     geom_polygon(aes(fill = Video_Games), color = "black")
-  return(plot)
+  return(ggplotly(plot, tooltip = c("text")))
 }
