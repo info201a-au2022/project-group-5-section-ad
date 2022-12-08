@@ -9,7 +9,7 @@ introduction <- fluidPage(
   tags$head(
     tags$style(HTML("
       body {
-        background-color: gray;
+        background-color: black;
         color: white;
       }
     "))
@@ -78,6 +78,80 @@ map_ui <- fluidPage(
     mainPanel(
       plotlyOutput("map")
     )
+  ),
+  tags$footer("Information About the Video Games: ",
+              tags$a(
+                "Grand Theft Auto V, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V"),
+              tags$a(
+                "Bioshock, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/BioShock"),
+              tags$a(
+                "Cyberpunk 2077, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Cyberpunk_2077"),
+              tags$a(
+                "Doom, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Doom_(1993_video_game)"),
+              tags$a(
+                "Elden Ring, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Elden_Ring"),
+              tags$a(
+                "Final Fantasy VII, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Final_Fantasy_VII"),
+              tags$a(
+                "God of War, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/God_of_War_Ragnar%C3%B6k"),
+              tags$a(
+                "Hades, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Hades_(video_game)"),
+              tags$a(
+                "Horizon Zero Dawn, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Horizon_Zero_Dawn"),
+              tags$a(
+                "Portal, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Portal_(video_game)"),
+              tags$a(
+                "Red Dead Redemption 2, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Red_Dead_Redemption_2"),
+              tags$a(
+                "Resident Evil 2, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Resident_Evil_2"),
+              tags$a(
+                "Stardew Valley, ",
+                target = "_blank",
+                href = "https://stardewvalleywiki.com/Stardew_Valley_Wiki"),
+              tags$a(
+                "Teenage Mutant Ninja Turtles: Shredder's Revenge, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Teenage_Mutant_Ninja_Turtles:_Shredder%27s_Revenge"),
+              tags$a(
+                "The Elder Scrolls V: Skyrim - Special Edition, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Cyberpunk_2077"),
+              tags$a(
+                "The Legend of Zelda: Breathe of the Wild, ",
+                target = "_blank",
+                href = "https://elderscrolls.fandom.com/wiki/The_Elder_Scrolls_V:_Skyrim_Special_Edition"),
+              tags$a(
+                "The Witcher 3: Wild Hunt, ",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt"),
+              tags$a(
+                "Tomb Raider",
+                target = "_blank",
+                href = "https://en.wikipedia.org/wiki/Tomb_Raider")
   )
 )
 
@@ -189,15 +263,33 @@ report_ui <- fluidPage(
   p("From our experiment, we want individuals like us to realize that we should not always trust the information that is presented to us. Despite news outlet creating this theory that video games creates criminals, we were not able to find a correlation that proves this theory right. However, we are able to see that there was a trend between each state in total number of crimes committed because every state were fairly close to each other in total number of crimes committed. Another trend was that each state had the same data of the type of crime that was most committed. The two highest committed crimes in each states were theft and assault. Because there was no clear correlation between video games, total number of crimes committed, and the type of crimes that were committed, as a group we have decided to claim that video games is not a factor of an individual becoming a criminal. Because our research is focused on video games, which is a limitation of ours, we are not able to find the factor that makes an individual become a criminal."),
   
   h2("References: "),
+  tags$footer("Federal Bureau of Investigation. \"Crimes Against Persons Offenses.\" Retrieved October 30, 2022. From:",
+              tags$a(
+                "https://crime-data-explorer.fr.cloud.gov/pages/home",
+                target = "_blank",
+                href = "https://crime-data-explorer.fr.cloud.gov/pages/home")
+  ),
   
-  p("Federal Bureau of Investigation. \"Crimes Against Persons Offenses.\" Retrieved October 30, 2022. From: https://crime-data-explorer.fr.gov/pages/home"),
+  tags$footer("Federal Bureau of Investigation. \"Crimes Against Society Offenses.\" Retrieved October 30, 2022. From: ",
+              tags$a(
+                "https://crime-data-explorer.fr.cloud.gov/pages/home",
+                target = "_blank",
+                href = "https://crime-data-explorer.fr.cloud.gov/pages/home")
+  ),
   
-  p("Federal Bureau of Investigation. \"Crimes Against Society Offenses.\" Retrieved October 30, 2022. From: https://crime-data-explorer.fr.gov/pages/home"),
+  tags$footer("Federal Bureau of Investigation. \"Crimes Against Propoerty Offenses.\" Retrieved October 30, 2022. From: ",
+              tags$a(
+                "https://crime-data-explorer.fr.cloud.gov/pages/home",
+                target = "_blank",
+                href = "https://crime-data-explorer.fr.cloud.gov/pages/home")
+  ),
   
-  p("Federal Bureau of Investigation. \"Crimes Against Property Offenses.\" Retrieved October 30, 2022. From: https://crime-data-explorer.fr.gov/pages/home"),
-  
-  p("Grubb, Jeff. \"NPD: The 20 best-selling games of 2019 in the U.S.\" Retrieved October 30, 2022. From: https://venturebeat.com/games/20-best-selling-games-of-2019")
-  
+  tags$footer("Grubb, Jeff. \"NPD: The 20 best-selling games of 2019 in the U.S.\" Retrieved October 30, 2022. From: ",
+              tags$a(
+                "https://venturebeat.com/games/20-best-selling-games-of-2019",
+                target = "_blank",
+                href = "https://venturebeat.com/games/20-best-selling-games-of-2019")
+  )
 )
 
 # Final webpage layout
