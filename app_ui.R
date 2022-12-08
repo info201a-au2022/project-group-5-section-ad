@@ -122,19 +122,17 @@ takeaway_ui <- fluidPage(
   h4("Total Crime in All States"),
   p("We noticed that the rate of crime for all the states tend to all between 0 and 500,000 offeneses with Texas as an outlier having over 1,500,000 offenses. But when comparing the frequency of each type of crime compared to its total amount of crimes Texas is similar to any other state. Because of the lack of evidence we can’t conclude that video games cause more crime since all the states seem consistant with its rates. "),
   
-<<<<<<< HEAD
   h4("Rates of Each Type of Crime"),
   p("The bigguest take away from comparing the types and rate of each crime from the states is that we noticed that the most frequent crime is assult offenses and larceny/theft offenses. This trend is consistant throughout almost every state. When thinking about the scope of video games as a cause this suggests that our focus should be on game with action and or of the shooter genre. Which is often what media outlets blame video games to cause young teens to do."),
-=======
-  h3("Rates of Each Type of Crime"),
+  
+  h4("Rates of Each Type of Crime"),
   p("The biggest take away from comparing the types and rate of each crime from the states is that we noticed that the most frequent crime is assult offenses and larceny/theft offenses. This trend is consistant throughout almost every state. When thinking about the scope of video games as a cause this suggests that our focus should be on game with action and or of the shooter genre. Which is often what media outlets blame video games to cause young teens to do."),
->>>>>>> 2614520eb8364e1c08f97327f822722efd72a75b
   
   h4("Most Popular Game in Each State"),
   p("From looking at the popular games from each state we did notice that a majority of the states’ most popular games tended to fall under a type of action or shooter genre. Which reflects our assumption of what to focus on in our previous finding. Although when comparing the rates of crime and type between states with games that involve action and those that don’t, the type of crime rate and frequency of which tend not to differ."),
   
 
-    h2("Content:"),
+  h2("Content:"),
   p("In looking at our research, we were able to answer our questions by pairing research questions together when answering them. This allowed for us to compare the data that we found from each interactive graphs. For instance, comparing the most popular video game in a certain along with their most committed crime."),
   h2("What Conclusions Did We Come Up With From Our Research?"),
   p("- There is no clear indication of video games influencing individuals to become criminals because despite the type of video game that was most played in a state, the types of crimes that were most committed was still the same."),
